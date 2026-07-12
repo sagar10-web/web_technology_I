@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sagar Ghimire - Program 19</title>
+</head>
+<body>
+
+<h2>Program 19: Cookies</h2>
+
+<button onclick="setTheme('dark')">Dark Mode</button>
+<button onclick="setTheme('light')">Light Mode</button>
+
+<script>
+// Set cookie
+function setTheme(theme) {
+    document.cookie = "theme=" + theme + "; path=/;";
+    alert("Theme set to " + theme);
+}
+
+// Read cookie
+let cookies = document.cookie.split(";");
+for (let c of cookies) {
+    let [key, value] = c.trim().split("=");
+    if (key === "theme") {
+        document.body.style.background = value === "dark" ? "black" : "white";
+        document.body.style.color = value === "dark" ? "white" : "black";
+    }
+}
+</script>
+
+</body>
+</html>

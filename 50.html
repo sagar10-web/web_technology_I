@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sagar Ghimire - Program 10</title>
+</head>
+<body>
+<p id="output"></p>
+
+<script>
+// alert version
+let nameAlert = prompt("Enter your name for alert version:");
+if (!nameAlert) alert("You did not enter your name!");
+else alert("Hello " + nameAlert);
+
+// confirm version
+let nameConfirm = prompt("Enter your name for confirm version:");
+if (!nameConfirm) confirm("You did not enter your name!");
+else confirm("Hello " + nameConfirm);
+
+document.getElementById("output").innerHTML =
+"Both greeting dialogs executed successfully.";
+</script>
+
+</body>
+</html>

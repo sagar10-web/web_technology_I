@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sagar Ghimire - Program 4</title></head>
+<body>
+<p id="output"></p>
+
+<script>
+function calc(n1, n2, op) {
+    if (op === "+") return n1 + n2;
+    if (op === "-") return n1 - n2;
+    if (op === "*") return n1 * n2;
+    if (op === "/") return n1 / n2;
+}
+
+document.getElementById("output").innerHTML =
+    "10 + 5 = " + calc(10, 5, "+");
+</script>
+</body>
+</html>

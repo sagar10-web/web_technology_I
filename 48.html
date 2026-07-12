@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sagar Ghimire - Program 8</title></head>
+<body>
+<p id="output"></p>
+
+<script>
+function isPalindrome(s) {
+    return s === s.split("").reverse().join("");
+}
+document.getElementById("output").innerHTML =
+    "madam is palindrome? → " + isPalindrome("madam");
+</script>
+</body>
+</html>

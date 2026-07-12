@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sagar Ghimire - Program 5</title></head>
+<body>
+<p id="output"></p>
+
+<script>
+let x = Number(prompt("Enter first number"));
+let y = Number(prompt("Enter second number"));
+let z = Number(prompt("Enter third number"));
+
+let largest;
+if (x >= y && x >= z) largest = x;
+else if (y >= x && y >= z) largest = y;
+else largest = z;
+
+document.getElementById("output").innerHTML = "Largest Number = " + largest;
+</script>
+</body>
+</html>

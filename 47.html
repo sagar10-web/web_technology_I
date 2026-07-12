@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sagar Ghimire - Program 7</title></head>
+<body>
+<p id="output"></p>
+
+<script>
+function factorial(n) {
+    let f = 1;
+    for (let i = 1; i <= n; i++) f *= i;
+    return f;
+}
+document.getElementById("output").innerHTML =
+    "Factorial of 5 = " + factorial(5);
+</script>
+</body>
+</html>

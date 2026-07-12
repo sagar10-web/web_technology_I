@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sagar Ghimire - Program 9</title></head>
+<body>
+<p id="output"></p>
+
+<script>
+let num = 12345;
+let rev = 0;
+
+while (num > 0) {
+    rev = rev * 10 + (num % 10);
+    num = Math.floor(num / 10);
+}
+
+document.getElementById("output").innerHTML =
+    "Reversed Number = " + rev;
+</script>
+</body>
+</html>
